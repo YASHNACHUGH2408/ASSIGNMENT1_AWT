@@ -1,0 +1,641 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f5f5f5; /* Light background for the page */
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header Styling */
+header {
+    background: #ffffff; /* White background for header */
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Top Section */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 15px; /* Space between logo and company name */
+}
+
+.logo img {
+    width: 150px; /* Adjust logo size */
+}
+
+.company-name h1 {
+    margin: 0;
+    font-size: 1.5em; /* Adjust company name size */
+    color: #333; /* Adjust text color */
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: auto; /* Align buttons to the right */
+}
+
+.header-buttons .btn {
+    background: transparent;
+    color: #ff4c00;
+    border: 2px solid #ff4c00;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header-buttons .btn.primary {
+    background: #ff4c00;
+    color: #fff;
+    border: none;
+}
+
+.header-buttons .btn:hover {
+    background: #e04300;
+    color: #fff;
+}
+
+.header-buttons .btn.primary:hover {
+    background: #e04300;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    margin-top: 10px; /* Space between header and navigation */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff4c00;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: #f4f4f4; /* Light background color */
+    color: #333; /* Dark text color for contrast */
+    text-align: center;
+    padding: 120px 20px; /* Increased padding for better visibility */
+}
+
+.hero h1 {
+    font-size: 4.5em; /* Adjusted font size for prominent heading */
+    margin: 0 0 20px 0;
+    font-weight: 700; /* Bold weight for emphasis */
+    line-height: 1.2; /* Improved line height for readability */
+}
+
+.hero p {
+    font-size: 1.25em; /* Adjusted font size for subheading */
+    margin: 0 0 20px 0;
+    font-weight: 300; /* Lighter weight for subheading */
+    line-height: 1.5; /* Improved line height for readability */
+}
+
+.hero .btn {
+    background: #007bff; /* Primary button color */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.1em;
+}
+
+.hero .btn:hover {
+    background: #0056b3; /* Darker shade on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+/* Responsive Design for Hero Section */
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 20px; /* Reduced padding on smaller screens */
+    }
+
+    .hero h1 {
+        font-size: 3em; /* Reduced font size for smaller screens */
+    }
+
+    .hero p {
+        font-size: 1em; /* Reduced font size for smaller screens */
+    }
+}
+
+/* Solutions Section */
+.solutions {
+    background: #ffffff; /* White background for clarity */
+    padding: 60px 20px;
+}
+
+.solutions h2 {
+    font-size: 2.5em;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+.solutions .grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.solution {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.solution img {
+    width: 100px; /* Increase the width of the images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.solution h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.solution p {
+    font-size: 1em;
+    color: #666;
+}
+/* Products Section */
+.products {
+    background: #f5f5f5; /* Light gray background */
+    padding: 60px 20px;
+}
+
+.products h2 {
+    font-size: 2.5em;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+.products .grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%; /* Ensures image does not exceed container width */
+    height: auto; /* Maintains aspect ratio */
+    margin-bottom: 15px; /* Space between image and text */
+}
+
+.product h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.product p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: #ffffff; /* White background for clarity */
+    padding: 60px 20px;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+.testimonials .testimonial {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.testimonials .testimonial p {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+}
+
+.testimonials .testimonial h3 {
+    font-size: 1.2em;
+    color: #ff4c00;
+}
+
+/* CTA Section */
+.cta {
+    background: #ff4c00; /* Orange background */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.5em;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+}
+
+.cta .btn {
+    background: #fff;
+    color: #ff4c00;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cta .btn:hover {
+    background: #e04300;
+    color: #fff;
+}
+
+/* Footer Styling */
+footer {
+    background: #333; /* Dark background for footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #ff4c00;
+}
+
+/* Company Section */
+.company {
+    background: #ffffff; /* White background for clarity */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.company h2 {
+    font-size: 2.5em;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+}
+
+.company p {
+    font-size: 1.1em;
+    margin: 0 0 20px 0;
+    color: #666;
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+.company .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.company .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.company .gallery img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Contact Section */
+.contact {
+    background: #ffffff; /* White background for the contact section */
+    min-height: 60vh;
+    padding: 4rem 0; /* Added padding for spacing */
+    text-align: center; /* Centered text alignment */
+}
+
+.contact h2.heading {
+    color: #333333; /* Dark gray color for the heading */
+    font-size: 2.5rem; /* Adjusted font size */
+    margin-bottom: 2rem; /* Space below the heading */
+    font-family: "Poppins", sans-serif; /* Font for the heading */
+}
+
+.contact h2.heading i {
+    color: #ffcc00; /* Optional: Color for icon */
+}
+
+.contact h2.heading span {
+    color: #ffcc00; /* Optional: Color for the highlighted text */
+}
+
+/* Container for Content */
+.contact .container {
+    max-width: 1200px; /* Increased max-width for larger screens */
+    width: 90%; /* Added percentage width for responsiveness */
+    background: #f5f5f5; /* Light gray background for the container */
+    border-radius: 1.5rem;
+    margin: 0 auto; /* Centered horizontally */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Lighter shadow for a softer look */
+    padding: 3rem; /* Added padding inside the container */
+}
+
+/* Flex Container for Content */
+.contact .container .content {
+    display: flex;
+    flex-direction: row; /* Changed to row for image on the left side */
+    align-items: flex-start; /* Aligned items at the start */
+    gap: 2rem; /* Added gap for spacing between elements */
+}
+
+/* Image Box */
+.contact .content .image-box {
+    max-width: 50%; /* Set to 50% of the container's width */
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centered image horizontally */
+}
+
+.contact .content .image-box img {
+    width: 100%;
+    max-width: 600px; /* Increased max-width for larger images */
+    height: auto; /* Auto height to maintain aspect ratio */
+    border-radius: 1rem; /* Added border radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Lighter shadow to match the new background */
+}
+
+/* Form Styles */
+.contact .content form {
+    background: #ffffff; /* White background for the form */
+    border-radius: 1rem;
+    padding: 2rem; /* Added padding inside the form */
+    width: 50%; /* Set to 50% of the container's width */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for the form */
+}
+
+/* Form Group */
+form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Increased gap for better spacing */
+}
+
+/* Input and Textarea Fields */
+.form-group .field {
+    display: flex;
+    position: relative;
+}
+
+form i {
+    position: absolute;
+    top: 50%;
+    left: 16px; /* Adjusted for better alignment */
+    color: #666666; /* Medium gray for icons */
+    font-size: 18px; /* Adjusted icon size */
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+form .field input,
+form .message textarea {
+    width: 100%;
+    padding: 0 16px 0 40px; /* Adjusted padding to fit icon */
+    font-size: 18px; /* Increased font size */
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    border: 1px solid #cccccc; /* Light gray border */
+    background: #ffffff; /* White background for inputs */
+    color: #333333; /* Dark gray text for better contrast */
+    height: 60px; /* Increased height for input fields */
+    box-sizing: border-box; /* Ensure padding is included in width and height */
+}
+
+.field input::placeholder,
+.message textarea::placeholder {
+    color: #999999; /* Light gray placeholder text */
+}
+
+.field input:focus,
+.message textarea:focus {
+    padding-left: 40px; /* Adjusted for focus state */
+    border: 2px solid #333333; /* Dark gray border on focus */
+}
+
+.field input:focus ~ i,
+.message textarea:focus ~ i {
+    color: #333333; /* Dark gray icons on focus */
+}
+
+form .message {
+    position: relative;
+    width: 100%;
+}
+
+form .message i {
+    top: 14px; /* Adjusted for better alignment */
+    left: 16px; /* Adjusted for better alignment */
+    font-size: 18px; /* Adjusted icon size */
+    color: #666666; /* Medium gray for icons */
+}
+
+form .message textarea {
+    padding: 12px 20px 0 40px; /* Adjusted padding to fit icon */
+    border: 1px solid #cccccc; /* Light gray border */
+    background: #ffffff; /* White background */
+    color: #333333; /* Dark gray text */
+    resize: vertical; /* Allows vertical resizing */
+    box-sizing: border-box; /* Ensure padding is included in width and height */
+}
+
+/* Button Area */
+form .button-area {
+    display: flex;
+    justify-content: center; /* Centered button */
+    margin-top: 1rem; /* Space above the button */
+}
+
+.button-area button {
+    color: #ffffff; /* White text */
+    border: none;
+    font-size: 1.6rem; /* Adjusted font size */
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 12px 20px; /* Adjusted padding */
+    background: #333333; /* Dark gray background for button */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Light shadow for button */
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-family: "Nunito", sans-serif;
+}
+
+.button-area button:hover {
+    background: #444444; /* Slightly lighter gray on hover */
+    transform: scale(1.05); /* Added scale effect on hover */
+}
+
+.button-area span {
+    font-size: 17px;
+    padding: 1rem;
+    display: none;
+}
+
+.button-area button i {
+    position: relative;
+    top: 1px; /* Adjusted for better alignment */
+    left: 2px;
+    font-size: 1.5rem;
+    transition: left 0.3s ease;
+    color: #ffffff; /* White icons */
+}
+
+.button-area button:hover i {
+    left: 8px;
+}
+
+/* Contact Section Media Queries */
+@media (max-width: 900px) {
+    .contact {
+        min-height: 70vh;
+    }
+
+    .contact .container {
+        margin: 3rem auto; /* Centered horizontally */
+    }
+
+    .contact .container .content {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem; /* Added gap for spacing */
+        padding: 1.5rem; /* Adjusted padding */
+    }
+
+    .contact .content .image-box {
+        display: none;
+    }
+
+    .contact .content form {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact .container {
+        padding: 1rem; /* Adjusted padding for smaller screens */
+    }
+
+    .contact .content .image-box img {
+        max-height: 30rem; /* Adjusted image height */
+    }
+
+    form .form-group {
+        gap: 0.5rem; /* Reduced gap */
+    }
+
+    .button-area button {
+        font-size: 1.4rem; /* Adjusted button font size */
+        padding: 8px 16px; /* Adjusted padding for smaller screens */
+    }
+}

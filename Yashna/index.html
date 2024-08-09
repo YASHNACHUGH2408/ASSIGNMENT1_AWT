@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Fortress</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="photos/images/logo.png" alt="Logo">
+                    </div>
+                    <div class="company-name">
+                        <h1>Cyber Fortress</h1>
+                    </div>
+                </div>
+                <div class="header-buttons">
+                    <a href="#" class="btn">Login</a>
+                    <a href="#" class="btn primary">Sign Up</a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#company">Company</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>Helping Build a Better Internet</h1>
+            <p>Cyber Fortress’s suite of products protect and accelerate any internet application online without adding hardware, installing software, or changing a line of code.</p>
+            <a href="#cta" class="btn primary">Get Started</a>
+        </div>
+    </section>
+
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <h2>Our Solutions</h2>
+            <div class="grid">
+                <div class="solution">
+                    <img src="photos/images/Solution1.png" alt="Performance">
+                    <h3>Performance</h3>
+                    <p>Optimize your site's speed and performance.</p>
+                </div>
+                <div class="solution">
+                    <img src="photos/images/Solution2.png" alt="Security">
+                    <h3>Security</h3>
+                    <p>Protect your site from DDoS attacks and other threats.</p>
+                </div>
+                <div class="solution">
+                    <img src="photos/images/Solution3.png" alt="Reliability">
+                    <h3>Reliability</h3>
+                    <p>Ensure your site is always available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="grid">
+                <div class="product">
+                    <img src="photos/images/p1.png" alt="Product One">
+                    <h3>Product One</h3>
+                    <p>Description of product one, including key features and benefits. This product is designed to help with [specific problem or need].</p>
+                    <a href="#learn-more" class="btn">Learn More</a>
+                </div>
+                <div class="product">
+                    <img src="photos/images/P2.PNG" alt="Product Two">
+                    <h3>Product Two</h3>
+                    <p>Description of product two, detailing its unique selling points and advantages. Perfect for [specific use case or audience].</p>
+                    <a href="#learn-more" class="btn">Learn More</a>
+                </div>
+                <div class="product">
+                    <img src="photos/images/p3.png" alt="Product Three">
+                    <h3>Product Three</h3>
+                    <p>Description of product three, highlighting its primary functions and benefits. Ideal for [specific application or market].</p>
+                    <a href="#learn-more" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"Cyber Fortress has transformed the way we handle web security and performance."</p>
+                <h3>John Doe, CEO of Example Inc.</h3>
+            </div>
+            <div class="testimonial">
+                <p>"With Cyber Fortress, our website is faster and more secure than ever."</p>
+                <h3>Jane Smith, CTO of Another Co.</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Company Section -->
+    <section class="company">
+        <div class="container">
+            <h2>About Our Company</h2>
+            <p>
+                We are a leading company in our industry, dedicated to delivering top-notch services and innovative solutions. 
+                Here is a glimpse of our company through these photos.
+            </p>
+            <div class="gallery">
+                <img src="photos/images/c1.png" alt="Company Photo 1">
+                <img src="photos/images/c2.png" alt="Company Photo 2">
+                <img src="photos/images/c3.png" alt="Company Photo 3">
+                <img src="photos/images/c4.png" alt="Company Photo 4">
+                <img src="photos/images/c5.png" alt="Company Photo 5">
+                <img src="photos/images/c6.png" alt="Company Photo 6">
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="cta">
+        <div class="container">
+            <h2>Get Started with Cyber Fortress Today</h2>
+            <a href="#signup" class="btn primary">Sign Up</a>
+        </div>
+    </section>
+<!-- Contact Section -->
+<section class="contact" id="Contactform">
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+  
+    <div class="container">
+      <div class="content">
+        <div class="image-box">
+          <img draggable="false" src="photos/images/Solution3.png" alt="Contact Image">
+        </div>
+        <form id="contact-form" method="POST" action="contact.php" onsubmit="showThankYouPopup(event)">
+          <input type="hidden" name="form-name" value="contact-form">
+          <div class="form-group">
+            <div class="field">
+              <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+              <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+              <i class='fas fa-user'></i>
+            </div>
+            <div class="field">
+              <input type="email" id="email" name="email" placeholder="Email" required>
+              <i class='fas fa-envelope'></i>
+            </div>
+            <div class="field">
+              <input type="tel" id="phone" name="phone" placeholder="Phone">
+              <i class='fas fa-phone-alt'></i>
+            </div>
+            <div class="message">
+              <textarea id="message" placeholder="Message" name="message"></textarea>
+              <i class="fas fa-comment-dots"></i>
+            </div>
+          </div>
+          <div class="button-area">
+            <button type="submit" name="submit" value="submit">
+              Submit <i class="fa fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+<!--contact us form end-->  
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cyber Fortress, Inc. All rights reserved.</p>
+            <ul>
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="#facebook">Facebook</a>
+                <a href="#twitter">Twitter</a>
+                <a href="#linkedin">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
